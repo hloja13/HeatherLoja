@@ -1,0 +1,24 @@
+/* Naigation Bar/no bar */
+.topnav a {
+    color: #FDF7E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #FDF7E4;
+    color: #6F8F72;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 20px; 
+    margin-bottom: 0; 
+}
+
+/* Introduction Portion */
+
+
+/* Project Cards */
