@@ -5,49 +5,94 @@
     <title>Heather Loja's Portfolio</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href= "style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:italic,medium|Plus+Jakarta+Sans:italic,medium">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
-    <nav class="topnav">
-        <a href="Index.html" class="">Heather Loja</a>
-        <a href=" " class="nav-link">Projects</a>
-        <a href=" " class="nav-link">Skills</a>
-        <a href=" " class="nav-link">About Me</a>
-        <a href=" " class="nav-link">Resume</a>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <section class="introduction">
-        <h1 id="title">Hi, I'm <i>Heather!</i></h1>
-        <h4 id="title-text">An undergraduate researcher & designer @ Carnegie Mellon University studying International Relations and Politics with a minor in Human-Computer Interaction</h3>
-        <span>&#8681;</span>
-    </section>
-
-    <p id="projects-title">Projects</p>
-
-    <section class="Projects">
-        <div class="project-card">
-            <div class="container">
-                <img src="" alt="image of crossroads game mockup">
-                <p>
-                    Crossroads
-                </p>
-                <p>
-                    Information regarding the project or tags here!
-                </p>
+    <div class="IntroCard">
+        <div class="topnav">
+            <a href="Index.html" class="logo">Heather Loja</a>
+            <div class="topnav-right">
+                <a href="#Projects" class="nav-link">Projects</a>
+                <!--<a href="#skills" class="nav-link">Skills</a>-->
+                <a href="Aboutme.html" class="nav-link">About Me</a>
+                <a href="https://drive.google.com/file/d/1gURxRuuWnsv0FwLOKYTN2_T5CCuxFCiz/view?usp=sharing" class="nav-link">Resume</a>
             </div>
         </div>
 
+        <section class="introduction">
+            <span id="title">Hi, I'm <i>Heather!</i></span>
+            <p id="title-text">An undergraduate researcher & designer @ Carnegie Mellon University studying <i>International Relations and Politics</i> with a minor in <i>Human-Computer Interaction</i></p>
+            <span>&#8681;</span>
+        </section>
+    </div>
+
+    <p class="subtitle" id="projects-title">Projects</p>
+
+    <section id="Projects">
+        <div class="card-row1">
+            <div class="card">
+                <img src="/assets/Moped Mechanix.png" alt="image of Autnomous Moped mockup">
+                <div class="container">
+                    <h2>
+                        Autonomous Moped
+                    </h2>
+                    <p>
+                        Digital screens of a semi-autonmous Moped using Ford branding
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/Crossroads Mockup-3.jpg" alt="image of crossroads game mockup">
+                <div class="container">
+                    <h2>
+                        Crossroads
+                    </h2>
+                    <p>
+                        Decision-making game using persuasive design techniques to counteract racial bias
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/BearWell Companion Mockup-2.png" alt="image of Smartload Insight mockup">
+                <div class="container">
+                    <h2>
+                        BearWell Companion
+                    </h2>
+                    <p>
+                        A kid's app intergrating AI & IOT to encourage reduction of screen time
+                    </p>
+                </div>
+            </div>
+
     </section>
 
-    <section class="skills">
+<!-- Will incoporate skills at a later time, but feels unnecessary rn
+    <p class="subtitle" id="skills-title">Skills</p> 
+
+    <section id="skills">
 
     </section>
-
+-->
     <footer>
         <p>Let's stay in touch!</p>
         <a href="www.linkedin.com/in/heatherloja">linkedin.com/in/heatherloja</a>
         <a href="mailto:hloja@andrew.cmu.edu">hloja@andrew.cmu.edu</a>
     </footer>
 
+    <script>
+    const typed = new Typed('#title', {
+        strings: ["Hi, <i>I'm Heather!</i>", "Hola, soy <i>Heather!</i>", "Hi, <i>I'm Heather!</i>"],
+        startDelay: 40,
+        typeSpeed: 80,
+        backSpeed: 80,
+    });
+    </script>
 
 </body>

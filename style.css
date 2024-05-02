@@ -4,7 +4,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .topnav a:hover {
@@ -12,13 +12,161 @@
     color: #6F8F72;
 }
 
-.nav-link {
-    display: inline-block;
-    margin-left: 20px; 
-    margin-bottom: 0; 
+.topnav-right{
+    float: right;
+}
+
+body{
+    background: rgb(253,247,228);
+    background: linear-gradient(0deg, rgba(253,247,228,1) 25%, rgba(111,143,114,1) 100%);
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #92664A;
+    color: #FDF7E4;
+}
+
+footer p{
+    color: #FDF7E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a{
+    color: #FDF7E4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Playfair Display';
 }
 
 /* Introduction Portion */
 
+.introduction{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+}
+
+#title{
+    color: #FDF7E4;
+    font-family: 'Playfair Display';
+    font-weight: medium;
+    font-size: 96px;
+}
+
+#title-text{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: medium;
+    font-size: 32px;
+}
+
+#title-text i{
+    text-decoration: underline;
+}
+
+.introduction span{
+    font-size: 100px;
+    color: #000;;
+    text-align:center;
+    width:200px;
+}
+
+.subtitle{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 /* Project Cards */
+
+.card-row1 {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    height: 500px;
+    border-radius: 300px 300px 0 0;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+  /* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card img{
+    width: 350px;
+    height: 330px;
+    border-radius: 300px 300px 0 0;
+}
+
+
+/* Skills */
+
+/* About Me */
+.aboutme p, li{
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+}
+
+.aboutme-box img{
+    float: left;
+    width: 350px;
+    padding: 20px 40px;
+    border-radius: 300px 300px 0 0;
+}
+
+.aboutme-box{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.aboutme-text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutme-text i{
+    text-decoration: underline;
+}
+
+#aboutme-title{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+}
